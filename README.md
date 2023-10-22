@@ -1,4 +1,4 @@
-Hi,I am Nidhi Kumari Agarwal urrently pursuing Chemical Engineering from IIT(BHU),Varanasi.
+Hi,I am Nidhi Kumari Agarwal currently pursuing Chemical Engineering from IIT(BHU),Varanasi.Here,I present my Project on Messaging Service Prototype.
 
 
 # Motivate My Run
