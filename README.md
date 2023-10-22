@@ -1,57 +1,57 @@
 Hi,I am Nidhi Kumari Agarwal currently pursuing Chemical Engineering from IIT(BHU),Varanasi.Here,I present my Project on Messaging Service Prototype.
 
+#Motivate My Run
 
-# Motivate My Run
+Motivate My Run is a fantastic project that aims to provide motivation and inspiration during runs through randomly selected text messages. To get started with this service, here's a brief overview and some additional insights:
 
-Motivate My Run is a prototype sms messaging service that sends randomly selected texts to a given cell phone number
+##Installation Instructions:
 
-## Installation instructions
+1. Clone the project from the repository.
+2. Run `npm install` to install the required packages.
 
-run npm install for the required packages.
+###Environmental Variables:
 
-### Environmental Variables
+You'll need to set up environmental variables in a .env file with the following key values:
 
-Setup a .env file in your root with the following key values (you'll need to setup twitter, a database, and Twilio account). This was built using an mLabs hosted mongoDB database.
+- **Database Configuration**:
+  - `DB_PASSWORD`: Your database password.
+  - `DB_USERNAME`: Your database username.
+  - `DB_URL`: URL for your MongoDB database (e.g., mLabs hosted database).
 
-Database
+- **Twitter Configuration**:
+  - `TWITTER_TOKEN`: Twitter API token.
 
-DB_PASSWORD 
-DB_USERNAME
-DB_URL 
+- **Twilio Configuration**:
+  - `TWILIO_ID`: Twilio account ID.
+  - `TWILIO_TOKEN`: Twilio authentication token.
+  - `TWILIO_NUMBER`: Your Twilio phone number.
+  - `TWILIO_TEST_TOKEN`: Twilio test authentication token.
+  - `TWILIO_TEST_ID`: Twilio test account ID.
 
-TWITTER_TOKEN -> Twitter api Token 
+- **Other Configuration**:
+  - `RECEIVING_NUMBER`: The cell phone number to which motivational texts will be sent.
 
-From your Twilio account
+##Running the Server:
 
-TWILIO_ID  
-TWILIO_TOKEN 
-TWILIO_NUMBER 
-TWILIO_TEST_TOKEN 
-TWILIO_TEST_ID
+To start the server, run `npm start`. The server will run locally on `localhost:3000`. To generate a motivational text message, send a GET request to `localhost:3000`. You can also deploy the server on platforms like Heroku, ensuring you set your environmental variables there.
 
-Other
+###Setting up the Scraper:
 
-RECEIVING_NUMBER -> Cell phone To Be Texted
+The Twitter scraping script is located in the 'bin' folder of the project's root. If you deploy the project on Heroku, you can schedule the scraper script to run at intervals (e.g., once every hour) using Heroku Scheduler. To do this, run `scraper.js` in Heroku Scheduler.
 
-## Running the server 
+##Documentation:
 
-The server can be run locally using the script npm start.
-It will run on localhost:3000.
-To generate a text message send a get request to localhost:3000
-You can also run on a service like heroku (make sure to set your .env)
+For more detailed information, you can refer to the automatically generated documentation from JSDocs, which can be found [here](https://jonathanwmaddison.github.io/MotivateMyRun/documentation/global.html).
 
-### Setting up the Scraper 
+##Testing:
 
-The twitter scraping script is located in the bin folder of the project's root.
+The project includes linting and testing tools:
+- Run `npm run-script lint` to analyze all JavaScript files in the project based on Google linting standards.
+- Run `npm test` to execute a few Mocha/Chai tests. You can customize and expand these tests as needed.
 
-If you deploy this on Heroku, it is easy to schedule this script to run once every hour using Heroku scheduler. Simply run scraper.js in Heroku Scheduler
+Ensure that you have proper permissions and access to the necessary services like Twitter, MongoDB, and Twilio to set up and run this project successfully. Additionally, consider personalizing the motivational messages to make them more inspiring and engaging for your users.
 
-## Documentation
 
-[See automatically generated documentation from jsdocs](https://jonathanwmaddison.github.io/MotivateMyRun/documentation/global.html)
 
-## Testing
 
-npm run-script lint will analyze all javascript files in the project based on Google linting standards.
 
-npm test runs a few mocha/chai tests.
