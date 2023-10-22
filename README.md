@@ -1,4 +1,4 @@
-Hi,I am Nidhi Kumari Agarwal urrently pusuing Chemical Engineering from IIT(BHU),Varanasi.
+Hi,I am Nidhi Kumari Agarwal urrently pursuing Chemical Engineering from IIT(BHU),Varanasi.
 
 
 # Motivate My Run
